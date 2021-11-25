@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            Registration Form
+        </title>
+        <style>
+           .container{
+               width: 550px;
+               border: 1px solid black;
+               background-color: rgba(105, 201, 201, 0.466);
+               margin: auto;
+           }
+           h1{
+               
+               box-sizing: 20px;
+               margin: auto;
+               padding: 20px;
+               color: brown;
+           }
+           
+        </style>
+        <script>
+            function takevalue()
+            {
+                var fname=document.getElementById("firname").value;
+                var sname=document.getElementById("secname").value;
+                var email=document.getElementById("mails").value;
+                document.write("YOUR INFO : <BR>"+" FIRST NAME : "+fname+"<br>");
+                document.write("LAST NAME : "+sname+"<br>");
+                document.write("EMAIL : "+email+"<br>");
+
+
+
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+        <h1>Rehistration form</h1>
+        <table>
+            <form onsubmit="takevalue()">
+                <tr>
+                    <th>
+                        First Name:
+                    </th>
+                    <th>
+                        <input type="text" id="firname" placeholder="first name.."/>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        last Name:
+                    </th>
+                    <th>
+                        <input type="text" id="secname" placeholder="last name"/>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Email:
+                    </th>
+                    <th>
+                        <input type="email" id="mails" placeholder="mail...."/>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit">SUBMIT</button>
+                    </td>
+                </tr>
+                
+            </form>
+        </table>
+    </div>
+    </body>
+</html>
